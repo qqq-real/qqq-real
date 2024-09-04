@@ -9,7 +9,8 @@ public function isHired(): bool
   return $this->isHired;
 }
 
-public function Techstack(): array {
+public function Techstack(): array
+{
   return [
     Php::class,
     Laravel::class,
