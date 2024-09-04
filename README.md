@@ -19,11 +19,10 @@ public function Techstack(): array
     linuxeye/lnmp::class,
 ];
 
-public function needWork(): void
+public function needWork(): array
 {
   return $this->Techstack();
 }
-
 }
 ?>
 ```
