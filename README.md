@@ -9,13 +9,21 @@ public function isHired(): bool
   return $this->isHired;
 }
 
-public function Knowledges(): array {
+public function Techstack(): array {
   return [
     Php::class,
     Laravel::class,
     Python::class,
+    Tailwindcss::class,
+    linuxeye/lnmp::class,
 ];
+
+public function needWork(): void
+{
+  return $this->Techstack();
+}
+
 }
 ?>
 ```
- need job
+ need job hire me for experience...
