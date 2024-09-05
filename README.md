@@ -1,29 +1,33 @@
 ``` php
 <?php
-namespace qqq-real;
-use keepLearning;
+namespace QqqReal;
 
-$isHired = false;
-public function isHired(): bool
-{
-  return $this->isHired;
-}
+use KeepLearning;
 
-public function Techstack(): array
+class Developer
 {
-  return [
-    Php::class,
-    Laravel::class,
-    Python::class,
-    Tailwindcss::class,
-    linuxeye/lnmp::class,
-];
+    private $isHired = false;
 
-public function needWork(): array
-{
-  return $this->Techstack();
+    public function isHired(): bool
+    {
+        return $this->isHired;
+    }
+
+    public function techStack(): array
+    {
+        return [
+            Php::class,
+            Laravel::class,
+            Python::class,
+            TailwindCss::class,
+            'linuxeye/lnmp',
+        ];
+    }
+
+    public function needWork(): array
+    {
+        return $this->techStack();
+    }
 }
-}
-?>
 ```
  need job hire me for experience...
